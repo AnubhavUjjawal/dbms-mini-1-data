@@ -1,0 +1,9 @@
+LOAD DATA LOCAL INFILE  
+'c:/temp/some-file.csv'
+INTO TABLE your_awesome_table  
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+(field_1,field_2 , field_3);
+
+DELETE FROM table WHERE id NOT IN (SELECT id FROM OTHER_table)
